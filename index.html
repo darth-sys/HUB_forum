@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навигатор по форумам Mordor RP</title>
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --card-bg: #2d2d2d;
+            --text-color: #ffffff;
+            --accent-color: #ff4a4a;
+            --hover-color: #ff6b6b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(255, 74, 74, 0.2);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .card.original h2 {
+            color: #ffaa00;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+            margin-top: auto;
+        }
+
+        .btn:hover {
+            background-color: var(--hover-color);
+        }
+
+        .card.original .btn {
+            background-color: #ffaa00;
+        }
+        .card.original .btn:hover {
+            background-color: #ffbb33;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Навигация по форумам Mordor RP</h1>
+
+    <div class="container">
+        <!-- Оригинальный сайт -->
+        <div class="card original">
+            <h2>Оригинальный форум</h2>
+            <p>Официальный веб-ресурс проекта Mordor RP.</p>
+            <a href="https://forum.mordor-rp.com/" target="_blank" class="btn">Перейти на сайт</a>
+        </div>
+
+        <!-- Форум Джемини -->
+        <div class="card">
+            <h2>Форум от Gemini</h2>
+            <p>Альтернативная версия форума, созданная нейросетью Джемини. Вход с правами модератора: ник moderator и пароль moder123</p>
+            <a href="https://darth-sys.github.io/mrp1/forum.html" target="_blank" class="btn">Перейти на сайт</a>
+        </div>
+
+        <!-- Форум Дипсика -->
+        <div class="card">
+            <h2>Форум от DeepSeek</h2>
+            <p>Вариант интерфейса форума, разработанный нейросетью Дипсиком.</p>
+            <a href="https://darth-sys.github.io/mrp2/" target="_blank" class="btn">Перейти на сайт</a>
+        </div>
+
+        <!-- Форум Алисы -->
+        <div class="card">
+            <h2>Форум от Алисы</h2>
+            <p>Концепт форумной площадки, сгенерированный Алисой.</p>
+            <a href="https://darth-sys.github.io/mrp3/#" target="_blank" class="btn">Перейти на сайт</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Все сайты разработаны в качестве эксперимента для видеоролика
+        YT: AppleBuck</p>
+    </footer>
+
+</body>
+</html>
